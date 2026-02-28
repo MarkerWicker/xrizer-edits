@@ -289,6 +289,7 @@ pub(super) enum ControllerType {
     #[serde(rename = "vive_focus3_controller")]
     ViveFocus3,
     Knuckles,
+    OculusRiftTouch,
     OculusTouch,
     #[serde(untagged)]
     Unknown(String),

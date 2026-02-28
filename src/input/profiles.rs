@@ -1,3 +1,4 @@
+pub mod cv1_touch;
 pub mod knuckles;
 pub mod oculus_touch;
 pub mod simple_controller;
@@ -12,6 +13,7 @@ use crate::openxr_data::Hand;
 use glam::Mat4;
 use knuckles::Knuckles;
 use oculus_touch::Touch;
+use cv1_touch::Cv1Touch;
 use openxr as xr;
 use simple_controller::SimpleController;
 use std::ffi::CStr;
@@ -115,6 +117,7 @@ impl Profiles {
             list: &[
                 (ControllerType::ViveController, &ViveWands),
                 (ControllerType::Knuckles, &Knuckles),
+                (ControllerType::OculusRiftTouch, &Cv1Touch),
                 (ControllerType::OculusTouch, &Touch),
                 (ControllerType::ViveController, &SimpleController),
                 (ControllerType::ViveFocus3, &ViveFocus3),
