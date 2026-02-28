@@ -182,21 +182,21 @@ impl InteractionProfile for Cv1Touch {
             Hand::Left => Mat4::from_rotation_translation(
                 Quat::from_euler(
                     EulerRot::XYZ,
-                    -20.9_f32.to_radians(),
+                    -33.3_f32.to_radians(),
                     0.0_f32.to_radians(),
                     0.0_f32.to_radians(),
                 ),
-                Vec3::new(0.007, -0.00182941, 0.1019482),
+                Vec3::new(0.007, -0.00182941, 0.0919482),
             )
             .inverse(),
             Hand::Right => Mat4::from_rotation_translation(
                 Quat::from_euler(
                     EulerRot::XYZ,
-                    -20.9_f32.to_radians(),
+                    -33.3_f32.to_radians(),
                     0.0_f32.to_radians(),
                     0.0_f32.to_radians(),
                 ),
-                Vec3::new(-0.007, -0.00182941, 0.1019482),
+                Vec3::new(-0.007, -0.00182941, 0.0919482),
             )
             .inverse(),
         }
